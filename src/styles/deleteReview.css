@@ -1,0 +1,39 @@
+.confirmation-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.8);
+    width: 300px;
+  }
+  
+  .confirmation-popup button {
+    margin: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .confirmation-popup button:first-child {
+    background-color: red;
+    color: white;
+  }
+  
+  .confirmation-popup button:last-child {
+    background-color: white;
+    color: black;
+  }
+  
+  .confirmation-popup button:hover {
+    opacity: 0.8;
+  }
+  
