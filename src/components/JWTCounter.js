@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const JWTCounter = ({ children }) => {
+function JWTCounter() {
   // Get the counter value from localStorage or default to 60 seconds
   const initialCounter = parseInt(localStorage.getItem("counter"), 10) || 60;
   const [counter, setCounter] = useState(initialCounter);
@@ -27,17 +27,12 @@ const JWTCounter = ({ children }) => {
       {/* Popup Content */}
       <div className="popup-overlay">
         <div className="popup-content">
-          <p style={{fontWeight: "bold", fontStyle: "italic", color: "#a569bd"}}>
-            Your JWT Token Expires in: {Math.floor(counter / 60)}:
+          <p style={{ fontWeight: "bold", fontStyle: "italic", color: "#a569bd" }}>
+            Your JWT Expires in: {Math.floor(counter / 60)}:
             {(counter % 60).toString().padStart(2, "0")} minutes.
           </p>
         </div>
       </div>
-
-      {/* Render children and pass down the counter */}
-      {/* {React.Children.map(children, (child) =>
-        React.cloneElement(child, { counter })
-      )} */}
     </div>
   );
 };

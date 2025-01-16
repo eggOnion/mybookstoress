@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-
 import axios from "axios";
 
 import JWTCounter from "../components/JWTCounter";
-
 import { howToUseApp } from "../services/references";
 
 import "../styles/login.css";

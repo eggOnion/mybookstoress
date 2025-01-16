@@ -1,5 +1,6 @@
-import './styles/App.css';
 import WebPage from './components/WebPage';
+
+import './styles/App.css';
 
 function App() {
   return (

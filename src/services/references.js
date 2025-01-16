@@ -1,5 +1,5 @@
 export const howToUseApp = {
-    guide: `Demostration on Authentication & Authorization of the JWT token.`,
+    guide: `Demonstration on Authentication & Authorization of the JWT.`,
 
     guideActive: `1. Token Active:  
     * Allow to post, edit or delete your own reviews.`,
@@ -9,7 +9,4 @@ export const howToUseApp = {
     
     guidePublic: `3. General User:     
     * For browsing & searching of books only.`
-       
-
-
 };

@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+
 import AuthLink from "./AuthLink";
-import "../styles/navbar.css";
 import JWTCounter from "./JWTCounter";
+
+import "../styles/navbar.css";
 
 function NavBar() {
   const [showNavbar, setShowNavbar] = useState(true);
